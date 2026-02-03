@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yardy Rum Bar – Interactive Shelf</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="wrap">
+    <div class="canvas" id="canvas">
+      <!-- Your single Canva page image -->
+      <img
+        src="images/pageone.png"
+        alt="Yardy Rum Bar interactive rum shelf"
+        class="canvas-img"
+      />
+
+      <!-- Hotspots (invisible buttons on top of the image) -->
+      <button class="hotspot hs-1" data-rum="donq" aria-label="Don Q"></button>
+      <button class="hotspot hs-2" data-rum="plantation" aria-label="Plantation"></button>
+      <button class="hotspot hs-3" data-rum="smithcross" aria-label="Smith & Cross"></button>
+    </div>
+  </main>
+
+  <!-- Modal backdrop -->
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <!-- Modal -->
+  <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <button class="close" id="closeBtn" aria-label="Close">×</button>
+      <h2 id="modalTitle"></h2>
+      <p class="meta" id="modalMeta"></p>
+
+      <div class="block">
+        <h3>Quick Notes</h3>
+        <p id="modalNotes"></p>
+      </div>
+
+      <div class="block">
+        <h3>How to Describe It</h3>
+        <p class="pitch" id="modalPitch"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

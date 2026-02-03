@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rum Details</title>
+    <link rel="stylesheet" href="rum-detail-styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-link">← Back to Collection</a>
+            <h1 id="rumTitle">Loading...</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="detail-container">
+            <!-- Hero Image Section -->
+            <div class="hero-section">
+                <div class="rum-image">
+                    <img id="rumImage" src="images/placeholder.jpg" alt="Rum Bottle">
+                </div>
+                <div class="quick-facts">
+                    <h2>Quick Facts</h2>
+                    <div class="fact">
+                        <span class="fact-label">Origin:</span>
+                        <span id="rumOrigin"></span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">ABV:</span>
+                        <span id="rumAbv"></span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Age:</span>
+                        <span id="rumAge"></span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Type:</span>
+                        <span id="rumType"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About the Producer -->
+            <section class="content-section">
+                <h2>About the Producer</h2>
+                <div id="producerInfo"></div>
+            </section>
+
+            <!-- Aging Process -->
+            <section class="content-section">
+                <h2>How It's Aged</h2>
+                <div id="agingInfo"></div>
+            </section>
+
+            <!-- Tasting Notes -->
+            <section class="content-section">
+                <h2>Tasting Notes</h2>
+                <div class="tasting-notes">
+                    <div class="tasting-category">
+                        <h3>Appearance</h3>
+                        <p id="appearance"></p>
+                    </div>
+                    <div class="tasting-category">
+                        <h3>Nose</h3>
+                        <p id="nose"></p>
+                    </div>
+                    <div class="tasting-category">
+                        <h3>Palate</h3>
+                        <p id="palate"></p>
+                    </div>
+                    <div class="tasting-category">
+                        <h3>Finish</h3>
+                        <p id="finish"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learn More Sources -->
+            <section class="content-section sources">
+                <h2>Learn More</h2>
+                <p>Explore these resources to dive deeper:</p>
+                <ul class="source-list" id="sourceList"></ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="index.html">← Back to Our Rum Collection</a></p>
+    </footer>
+
+    <script src="rum-data.js"></script>
+    <script src="rum-detail.js"></script>
+</body>
+</html>
